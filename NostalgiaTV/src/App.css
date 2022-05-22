@@ -1,0 +1,115 @@
+html {
+  height: 100vh;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  background-image: url('./back2.jpg');
+}
+
+ .search-form {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.form-controls {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-controls input[type="text"] {
+  display: flex;
+  border: 1px solid lightgray;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-controls input[type="text"]:focus {
+  outline: none;
+  border-color: gray;
+  box-shadow: 0 2px 5px lightgray;
+}
+
+.form-controls label {
+  display: none;
+} 
+
+/*About Us Styling*/
+#aboutUs {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.justinpic {
+  height: 125px;
+  width: auto;
+  border-radius: 30%;
+}
+
+.ericpic {
+  height: 125px;
+  width: auto;
+  border-radius: 30%;
+}
+
+.gabepic {
+  height: 125px;
+  width: auto;
+  border-radius: 30%;
+}
+
+.icons {
+  height: 75px;
+  width: auto;
+  color: black;
+  padding: 5px;
+}
+
+.aboutlink {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.homelink {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+/*Splashpage styles*/
+#rightCont {
+  text-align: center;
+  height: 70%;  
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh; 
+  /* These two lines are counted as one :-)*/
+  display: grid;
+  align-items: center;
+}
+
+#midCol {
+  padding-bottom: 20px;
+  border-radius: 10%;
+}
+#splashFoot {
+  font-size: 18px;
+  text-align: center;
+}
+#mBoard {
+  text-align: center;
+  font-weight: bolder;
+}

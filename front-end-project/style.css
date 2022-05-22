@@ -1,0 +1,91 @@
+body {
+  background-image: url("./assets/imgs/background-lab.jpg");
+
+  min-height: 500px;
+
+  /* Create a parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1 {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 80px;
+  color: rgb(39, 37, 37);
+}
+
+.row {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  opacity: 0.95;
+}
+
+/*.grow {
+  transition: all 0.2s ease-in-out;
+  margin: 10 auto;
+}
+
+.grow:hover {
+  transform: scale(1.05);
+}*/
+
+/* Used for testing */
+.show-borders {
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+
+/*Dark Mode Code*/
+.dark-mode .row {
+  background-color: #2e2f30;
+  background-image: linear-gradient(315deg, #2e2f30 0%, #15181b 74%);
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+  opacity: 0.95;
+}
+
+.dark-mode #stateDiv {
+  color: white;
+}
+.dark-mode #countryDiv {
+  color: white;
+}
+.dark-mode #worldDiv {
+  color: white;
+}
+.dark-mode #policyDiv {
+  color: white;
+}
+.dark-mode #travelDiv {
+  color: white;
+  
+}
+html .dark-mode {
+  background-image: url("./assets/imgs/backgroundDark.jpg");
+}
+
+.dark-mode a {
+  color: white !important;
+}
+
+
+#vaccinesDiv ul {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  font-size: large;
+}
+
+a:hover {
+  color: red !important;
+}

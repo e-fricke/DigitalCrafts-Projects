@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleIndex.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzy Fizzy</title>
+    <script src=../index.js></script>
+</head>
+<body>
+    <h3>
+        100% Handmade in Manchester, Tennessee.  We use high quality ingredients and small batch production. Thank you for shopping handmade. Let us know if we can help you in any way!
+    </h3>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col" id='buttonCol'>
+                <!--Login Button-->
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="/auth/github" method="get">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <img src="./images/cropped-LOGO_360x.jpg" alt="Avatar" class="avatar" id="fizzyLogo">
+                        </div>
+                        <div class="container">
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username">
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password">
+                            <button onclick="">Login</button>
+                        
+                        </div>
+                    </form>
+                </div>
+                <!--Sign Up Button-->
+                <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+                <div id="id02" class="modal">
+                    <form class="modal-content animate" action="/register" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                                title="Close Modal">&times;</span>
+                            <img src="./images/cropped-LOGO_360x.jpg" alt="Avatar" class="avatar" id="fizzyLogo">
+                        </div>
+                        <div class="container">
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Enter Name" name="name" required minlength="2">
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" required minlength="2">
+                            <label for="password"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password - 8 Character Minimum" name="password" required minlength="8">
+                            <button onclick="">Sign Up</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+            </div><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col" id="bombImg">
+                        <img src="./images/output-onlinepngtools1.png">
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5>
+        Subscribe to our newsletter - Promotions, new products, and sales. Directly to your inbox.
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+    </h5>
+    <br>
+    ${footer}
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
